@@ -15,7 +15,7 @@ app.use("/api/test", testRoutes);
 
 setInterval(async () => {
   try {
-    const res = await axios.get(`http://localhost:${PORT}/api/test`);
+    const res = await axios.get(`https://reactnativestockapp.onrender.com/api/test`);
     console.log("✅ Internal /api/test call response:", res.data);
   } catch (err) {
     console.error("❌ Error calling /api/test:", err.message);
